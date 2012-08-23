@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Browser title:</b>
+  <%= @seo_metum.browser_title %>
+</p>
+
+<p>
+  <b>Meta keywords:</b>
+  <%= @seo_metum.meta_keywords %>
+</p>
+
+<p>
+  <b>Meta description:</b>
+  <%= @seo_metum.meta_description %>
+</p>
+
+<p>
+  <b>Meta author:</b>
+  <%= @seo_metum.meta_author %>
+</p>
+
+
+<%= link_to 'Edit', edit_seo_metum_path(@seo_metum) %> |
+<%= link_to 'Back', seo_meta_path %>

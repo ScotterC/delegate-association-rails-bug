@@ -1,0 +1,2 @@
+module SeoMetaHelper
+end
