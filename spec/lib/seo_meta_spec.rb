@@ -46,9 +46,6 @@ module SeoMeta
 
     context "association" do
       context "user and collection" do
-        # before(:each) do
-        #   user.stub(:collection).and_return user.collection
-        # end
         context 'responds to' do
           it 'meta_description' do
             user.collection.respond_to?(:meta_description).should be_true

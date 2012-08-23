@@ -6,8 +6,10 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :collections
 
   def collection
+    return @collection if @collection
     default_collection = self.collections.first
     default_collection ||= self.collections.create
-    default_collection
+    @collection = default_collection
   end
+  
 end
